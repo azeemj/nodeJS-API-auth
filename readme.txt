@@ -1,3 +1,8 @@
+
+This is API authentication for mutiple device is implemeted by expressJS.
+
+
+
 please create a mngoDB in local 
 "  'url' : 'mongodb://127.1.1.0/local'" then create a "clients" collection and insert the following values
 
