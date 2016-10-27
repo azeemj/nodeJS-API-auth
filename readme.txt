@@ -1,5 +1,5 @@
 
-This is API authentication for mutiple device is implemeted by expressJS.
+This is a mechanism  that enables API authentication for mutiple device is implemeted by expressJS.
 
 
 
