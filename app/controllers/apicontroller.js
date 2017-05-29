@@ -5,7 +5,7 @@
 var bcrypt = require('bcrypt-nodejs');
 var jwt = require('jsonwebtoken');
 var express = require('express'), approuter = express.Router(),
-        mongoose = require('mongoose');
+mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var app = express();
@@ -23,9 +23,6 @@ var passport = require('passport');
 var apiRoutes_mobile = express.Router();
 
 module.exports = app.use('/mobil-api/v1', apiRoutes_mobile);
-
-
-;
 
 
 /**
@@ -108,9 +105,7 @@ apiRoutes_mobile.post('/auth', function (req, res) {
         return res.json({success: false, content: {message: "Please send the password."}});
 
     Client.findOne({clientId: clientId}, function (err, client) {
-
-
-        if (err)
+       if (err)
             return res.json({success: false, content: {message: "Wrong API key"}});
         console.log(client);
         if (!client) {
@@ -183,9 +178,6 @@ apiRoutes_mobile.post('/auth', function (req, res) {
 
                     });
                 }
-
-
-
             }
 
         });
